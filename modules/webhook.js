@@ -27,7 +27,7 @@ let processText = (text, sender)  => {
     match = text.match(/help/i);
     if (match) {
         sendMessage({text:
-            `You can ask me things like:
+            `We are here to help you. You can ask me things like:
     Search account Acme
     Search Acme in accounts
     Search contact Smith
