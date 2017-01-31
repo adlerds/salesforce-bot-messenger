@@ -86,6 +86,16 @@ let formatOpportunities = opportunities => {
                 }]
         })
     );
+    return {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": elements
+            }
+        }
+    };
+};
     
 let formatSideEffects = Side_Effects__c => {
     let elements = [];
@@ -106,8 +116,7 @@ let formatSideEffects = Side_Effects__c => {
                     "title": "Open in Salesforce"
                 }]
         })
-    });
-    
+    }); 
     return {
         "attachment": {
             "type": "template",
