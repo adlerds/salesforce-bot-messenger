@@ -95,11 +95,11 @@ let formatSideEffects = Side_Effects__c => {
             subtitle: "Gevgera",
             "image_url": Side_Effects__c.get("Side_Effect_Image__c"),
             "buttons": [
-                {
-                    "type": "postback",
-                    "title": "View Notes",
-                    "payload": "view_notes,"// + contact.getId() + "," + contact.get("Name")
-                },
+//                {
+//                    "type": "postback",
+//                    "title": "View Notes",
+//                    "payload": "view_notes,"// + contact.getId() + "," + contact.get("Name")
+//                },
                 {
                     "type": "web_url",
                     "url": "https://login.salesforce.com/",// + contact.getId(),
