@@ -102,7 +102,7 @@ let formatSideEffects = Side_Effects__c => {
                 },
                 {
                     "type": "web_url",
-                    "url": "https://login.salesforce.com/"// + contact.getId(),
+                    "url": "https://login.salesforce.com/",// + contact.getId(),
                     "title": "Open in Salesforce"
                 }]
         })
