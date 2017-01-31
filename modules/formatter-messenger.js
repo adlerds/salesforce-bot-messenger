@@ -92,7 +92,7 @@ let formatSideEffects = Side_Effects__c => {
     Side_Effects__c.forEach(Side_Effects__c => {
         elements.push({
             title: Side_Effects__c.get("Side_Effect_Summary__c"),
-            subtitle: "Gegera" +
+            subtitle: "Gevgera",
             "image_url": Side_Effects__c.get("Side_Effect_Image__c"),
             "buttons": [
                 {
