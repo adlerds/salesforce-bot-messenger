@@ -96,6 +96,37 @@ let formatOpportunities = opportunities => {
         }
     };
 };
+    
+let formatSideEffects = Side_Effects__c => {
+    let elements = [];
+    Side_Effects__c.forEach(Side_Effects__c => {
+        elements.push({
+            title: Side_Effects__c.get("Side_Effect_Summary__c"),
+            subtitle: "Gevgera",
+            "image_url": Side_Effects__c.get("Side_Effect_Image__c"),
+            "buttons": [
+                {
+                    "type": "postback",
+                    "title": "View Notes",
+                    "payload": "view_notes,"// + contact.getId() + "," + contact.get("Name")
+                },
+                {
+                    "type": "web_url",
+                    "url": "https://login.salesforce.com/",// + contact.getId(),
+                    "title": "Open in Salesforce"
+                }]
+        })
+    }); 
+    return {
+        "attachment": {
+            "type": "template",
+            "payload": {
+                "template_type": "generic",
+                "elements": elements
+            }
+        }
+    };
+};
 
 exports.formatAccounts = formatAccounts;
 exports.formatContacts = formatContacts;
