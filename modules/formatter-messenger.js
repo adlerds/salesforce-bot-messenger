@@ -121,3 +121,4 @@ let formatSideEffects = Side_Effects__c => {
 exports.formatAccounts = formatAccounts;
 exports.formatContacts = formatContacts;
 exports.formatOpportunities = formatOpportunities;
+exports.formatSideEffects = formatSideEffects;
