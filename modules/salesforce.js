@@ -116,4 +116,4 @@ exports.findAccount = findAccount;
 exports.findContact = findContact;
 exports.findContactsByAccount = findContactsByAccount;
 exports.getTopOpportunities = getTopOpportunities;
-exports.findSideEffects = Side_Effects__c;
+//exports.findSideEffects = Side_Effects__c;
