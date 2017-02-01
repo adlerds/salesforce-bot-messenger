@@ -72,7 +72,7 @@ let processText = (text, sender)  => {
         return;
     }
     
-    match = text.match(/side effects/i);
+/*    match = text.match(/side effects/i);
     if (match) {
         salesforce.findSideEffect(match[1]).then(SideEffects => {
             sendMessage({text: `Here are the side effects I found for Gevera:`}, sender);
@@ -80,7 +80,7 @@ let processText = (text, sender)  => {
         });
         return;
     }
-};
+};*/
 
 let handleGet = (req, res) => {
     if (req.query['hub.verify_token'] === process.env.FB_VERIFY_TOKEN) {
