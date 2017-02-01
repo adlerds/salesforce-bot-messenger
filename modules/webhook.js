@@ -79,8 +79,8 @@ let processText = (text, sender)  => {
             sendMessage(formatter.formatSideEffects(SideEffects), sender)
         });
         return;
-    }
-};*/
+    }*/
+};
 
 let handleGet = (req, res) => {
     if (req.query['hub.verify_token'] === process.env.FB_VERIFY_TOKEN) {
