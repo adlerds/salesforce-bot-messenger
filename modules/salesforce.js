@@ -93,7 +93,7 @@ let getTopOpportunities = count => {
 
 };
 
-let findSideEffect = name => {
+/*let findSideEffect = name => {
 
     return new Promise((resolve, reject) => {
         let q = "SELECT Id, Side_Effect_Summary__C, Side_Effect_Details__c, Side_effect_Image__c, Related_Product__c FROM Side_Effects__c WHERE Related_Product__c = '01t1100000651BWAAY' LIMIT 5";
@@ -107,7 +107,7 @@ let findSideEffect = name => {
         });
     });
 
-};
+};*/
 
 login();
 
@@ -116,4 +116,4 @@ exports.findAccount = findAccount;
 exports.findContact = findContact;
 exports.findContactsByAccount = findContactsByAccount;
 exports.getTopOpportunities = getTopOpportunities;
-exports.findSideEffect = finSideEffect;
+//exports.findSideEffect = finSideEffect;
