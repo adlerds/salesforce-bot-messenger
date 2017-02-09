@@ -8,16 +8,15 @@ let formatAccounts = accounts => {
             //subtitle: account.get("BillingStreet") + ", " + account.get("BillingCity") + " " + account.get("BillingState") + " · " + account.get("Phone"),
             subtitle: account.get("Side_Effect_Details__c"),
             "image_url": account.get("Side_Effect_URL__c"),
-            "buttons": [{
+            "buttons": [/*{
                 "type":"postback",
                 "title":"View Contacts",
                 "payload": "view_contacts," + account.getId() + "," + account.get("Name")
-            },{
+            },*/{
                 "type": "web_url",
-                "url": "https://login.salesforce.com/" + account.getId(),
-                "title": "Open in Salesforce"
-            },
-]
+                "url": "https://patientservices.force.com/IPP/login",
+                "title": "Find Out More"
+            },]
         })
     );
     return {
