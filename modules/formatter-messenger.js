@@ -4,8 +4,9 @@ let formatAccounts = accounts => {
     let elements = [];
     accounts.forEach(account =>
         elements.push({
-            title: account.get("Name"),
-            subtitle: account.get("BillingStreet") + ", " + account.get("BillingCity") + " " + account.get("BillingState") + " · " + account.get("Phone"),
+            title: account.get("Side_Effect_Summary__C"),
+            //subtitle: account.get("BillingStreet") + ", " + account.get("BillingCity") + " " + account.get("BillingState") + " · " + account.get("Phone"),
+            subtitle: account.get("Side_Effect_Details__c")
             "image_url": account.get("Picture_URL__c"),
             "buttons": [{
                 "type":"postback",
