@@ -40,7 +40,7 @@ let processText = (text, sender)  => {
     match = text.match(/side effect/i);
     if (match) {
         salesforce.findAccount(match[1]).then(accounts => {
-            sendMessage({text: `Here are the accounts I found matching "${match[1]}":`}, sender);
+            sendMessage({text: `Here are the side effects for Gevera:`}, sender);
             sendMessage(formatter.formatAccounts(accounts), sender)
         });
         return;
