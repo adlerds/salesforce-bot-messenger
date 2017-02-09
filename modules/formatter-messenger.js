@@ -7,7 +7,7 @@ let formatAccounts = accounts => {
             title: account.get("Side_Effect_Summary__C"),
             //subtitle: account.get("BillingStreet") + ", " + account.get("BillingCity") + " " + account.get("BillingState") + " · " + account.get("Phone"),
             subtitle: account.get("Side_Effect_Details__c"),
-            "image_url": account.get("Picture_URL__c"),
+            "image_url": account.get("Side_effect_Image__c"),
             "buttons": [{
                 "type":"postback",
                 "title":"View Contacts",
