@@ -28,10 +28,7 @@ let processText = (text, sender)  => {
     if (match) {
         sendMessage({text:
             `We are here to help you. You can ask me things like:
-    Search account Acme
-    Search Acme in accounts
-    Search contact Smith
-    What are my top 3 opportunities?
+    What are side effects of Gevera?
         `}, sender);
         return;
     }
