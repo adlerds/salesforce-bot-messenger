@@ -28,7 +28,7 @@ let processText = (text, sender)  => {
     if (match) {
         sendMessage({text:
             `We are here to help you. You can ask me things like:
-    What are side effects of Gavera?
+    What are side effects of Gevera?
         `}, sender);
         return;
     }
